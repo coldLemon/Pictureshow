@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8">
+    <title>查看照片</title>
+    <link rel="stylesheet" type="text/css"
+          href="photomatic.css"/>
+    <script type="text/javascript"
+            src="https://cdn.staticfile.org/jquery/1.4.3/jquery.js"></script>
+    <script type="text/javascript"
+            src="photomatic.js"></script>
+    <script type="text/javascript" src="jQueryRotate.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#imagePane img').photomatic({
+                photoElement:'#thunbnailsPane',
+                previousControl:'#previousButton',
+                nextControl:'#nextButton',
+                playControl:'#playButton',
+                firstControl:'#firstButton',
+                lastControl:'#lastButton',
+                delay:2000
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<div id="pageContainer">
+        <h1>亡者农药</h1>
+        <div id="imagePane">
+            <a href="#"><img src="wo1.jpg" class="img"/></a>
+            <a href="#"><img src="wo2.jpg" class="img"/></a>
+            <a href="#"><img src="wo3.jpg" class="img"/></a>
+            <a href="#"><img src="wo4.jpg" class="img"/></a>
+            <a href="#"><img src="wo5.jpg" class="img"/></a>
+            <a href="#"><img src="wo6.jpg" class="img"/></a>
+            <a href="#"><img src="wo7.jpg" class="img"/></a>
+            <a href="#"><img src="wo8.jpg" class="img"/></a>
+            <a href="#"><img src="wo9.jpg" class="img"/></a>
+            <a href="#"><img src="wo10.jpg" class="img"/></a>
+            <a href="#"><img src="wo11.jpg" class="img"/></a>
+            <a href="#"><img src="wo12.jpg" class="img"/></a>
+            <a href="#"><img src="wo13.jpg" class="img"/></a>
+            <a href="#"><img src="wo14.jpg" class="img"/></a>
+            <a href="#"><img src="wo15.jpg" class="img"/></a>
+            <a href="#"><img src="wo16.jpg" class="img"/></a>
+            <a href="#"><img src="wo17.jpg" class="img"/></a>
+            <a href="#"><img src="wo18.jpg" class="img"/></a>
+            <a href="#"><img src="wo19.jpg" class="img"/></a>
+            <a href="#"><img src="wo20.jpg" class="img"/></a>
+            <a href="#"><img src="wo21.jpg" class="img"/></a>
+            <a href="#"><img src="wo22.jpg" class="img"/></a>
+            <a href="#"><img src="wo23.jpg" class="img"/></a>
+            <a href="#"><img src="wo24.jpg" class="img"/></a>
+            <a href="#"><img src="wo25.jpg" class="img"/></a>
+
+
+        </div>
+
+        <div id="thunbnailsPane">
+          <img id="photoDisplay" src=""/>
+        </div>
+
+        <div id="buttonBar">
+           <div class="button"> <img src="firstButton.png" id="firstButton"
+                                     alt="First" title="First photo" /></div>
+            <div class="button"> <img src="previousButton.png" id="previousButton"
+                                      alt="previous" title="previous photo"/></div>
+           <div class="button"><img src="playButton.png" id="playButton"
+                                    alt="parse/play" title="Play or pause"/></div>
+            <div class="button"> <img src="nextButton.png" id="nextButton"
+                                      alt="Next" title="Next photo"/></div>
+            <div class="button" ><img src="lastButton.png" id="lastButton"
+                                      alt="Last" title="last photo"/></div>
+        </div>
+    <div id="logoPane">
+        <img src="logo.jpg" class="logo"></div>
+    </div>
+
+<audio src="music.mp3" autoplay="" loop=""></audio>
+
+</body>
+</html>
